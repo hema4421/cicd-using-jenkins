@@ -25,28 +25,34 @@
 				<version>3.2.0</version>
 			</plugin>
 			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				<configuration>
-					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.4.0</muleVersion>
-						<username>hema-nov</username>
-						<password>Hemala03</password>
-						<applicationName>test-214421-test</applicationName>
-						<environment>Sandbox</environment>
-						<region>us-east-2</region>
-						<workers>1</workers>
-						<workerType>MICRO</workerType>
-						<properties>
-							<key>value</key>
-						</properties>
-					</cloudHubDeployment>
-					<classifier>mule-application</classifier>
-				</configuration>
-			</plugin>
+  <groupId>org.mule.tools.maven</groupId>
+  <artifactId>mule-maven-plugin</artifactId>
+  <version>3.7.1</version>
+  <extensions>true</extensions>
+  <configuration>
+    <cloudhub2Deployment>
+      <uri>https://anypoint.mulesoft.com</uri>
+      <provider>MC</provider>
+      <environment>Sandbox</environment>
+      <target>Sharedspace</target>
+      <muleVersion>4.4.0</muleVersion>
+      <username>hema-nov</username>
+      <password>Hemala03</password>
+      <applicationName>hema-new-21</applicationName>
+      <replicas>1</replicas>
+      <vCores>1</vCores>
+      <deploymentSettings>
+        <http>
+          <inbound>
+            <publicUrl>${publicURL}</publicUrl>
+            <forwardSslSession>true</forwardSslSession>
+            <lastMileSecurity>true</lastMileSecurity>
+          </inbound>
+        </http>
+      </deploymentSettings>
+    </cloudhub2Deployment>
+  </configuration>
+</plugin>
 		</plugins>
 	</build>
 
@@ -79,6 +85,14 @@
 			<layout>default</layout>
 		</repository>
 	</repositories>
+<distributionManagement>
+    <repository>
+      <id>Repository</id>
+      <name>Corporate Repository</name>
+      <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/ORGANIZATION_ID/maven</url>
+      <layout>default</layout>
+    </repository>
+  </distributionManagement>
 
 	<pluginRepositories>
 		<pluginRepository>
