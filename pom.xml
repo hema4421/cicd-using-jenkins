@@ -34,7 +34,7 @@
       <uri>https://anypoint.mulesoft.com</uri>
       <provider>MC</provider>
       <environment>Sandbox</environment>
-      <target>Sharedspace</target>
+      <target>Shared Space</target>
       <muleVersion>4.4.0</muleVersion>
       <username>hema-nov</username>
       <password>Hemala03</password>
@@ -43,7 +43,7 @@
       <vCores>1</vCores>
       <deploymentSettings>
         <http>
-          <inbound>
+          <inbound  
             <publicUrl>${publicURL}</publicUrl>
             <forwardSslSession>true</forwardSslSession>
             <lastMileSecurity>true</lastMileSecurity>
