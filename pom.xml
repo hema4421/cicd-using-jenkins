@@ -34,7 +34,7 @@
       <uri>https://anypoint.mulesoft.com</uri>
       <provider>MC</provider>
       <environment>Sandbox</environment>
-      <target>Shared Space</target>
+      <target>SharedSpace</target>
       <muleVersion>4.4.0</muleVersion>
       <username>hema-nov</username>
       <password>Hemala03</password>
