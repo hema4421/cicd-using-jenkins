@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>cicd-using-jenkins</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<artifactId>test-214421-test</artifactId>
+	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
-	<name>cicd-using-jenkins</name>
+	<name>test-214421-test</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,7 +35,7 @@
 						<muleVersion>4.4.0</muleVersion>
 						<username>hema-nov</username>
 						<password>Hemala03</password>
-						<applicationName>test-2144</applicationName>
+						<applicationName>test-214421-test</applicationName>
 						<environment>Sandbox</environment>
 						<region>us-east-2</region>
 						<workers>1</workers>
